@@ -2,3 +2,6 @@
 *~
 *.idea
 v/
+.github/
+.trunk/
+.vYANG/
