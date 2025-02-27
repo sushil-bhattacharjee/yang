@@ -1,4 +1,5 @@
 from ncclient import manager
+# trunk-ignore(bandit/B408)
 from xml.dom.minidom import parseString
 from rich import print
 
@@ -28,6 +29,7 @@ try:
         response = m.dispatch(rpc_filter)
 
         # Parse the XML and pretty-print it
+        # trunk-ignore(bandit/B318)
         xml_response = parseString(response.xml)
         pretty_xml = xml_response.toprettyxml(indent="  ")
 

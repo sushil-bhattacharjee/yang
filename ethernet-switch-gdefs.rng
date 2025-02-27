@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0" xmlns:nma="urn:ietf:params:xml:ns:netmod:dsdl-annotations:1" xmlns:l2sw="http://hiTech007.com/ethernet-switch" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"><define name="ethernet-switch__vlan-id"><data type="unsignedShort"><param name="minInclusive">1</param><param name="maxInclusive">4094</param></data></define></grammar>

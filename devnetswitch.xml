@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+    <switch xmlns="http://hiTech007.com/ethernet-switch">
+        <hostname>devnetswitch</hostname>
+        <interface>
+            <name>GigabitEthernet0/1</name>
+            <description>HQ-LAN</description>
+            <speed>1000</speed>
+            <mode>access</mode>
+            <access-vlan>5</access-vlan>
+            </interface>
+        <interface>
+            <name>GigabitEthernet0/2</name>
+            <description>MPLS</description>
+            <speed>1000</speed>
+            <mode>trunk</mode>
+            <trunked-vlan>10</trunked-vlan>
+            <trunked-vlan>20</trunked-vlan>
+        </interface>
+    </switch>
+</data>

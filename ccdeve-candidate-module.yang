@@ -1,0 +1,20 @@
+module ccdeve-candidate-module {
+    namespace "http://devnetexperttraining.com/";
+    prefix "cc";
+
+    import ietf-netconf {
+        prefix nc;
+    }
+
+    container candidate {
+        leaf name {
+            type string;
+        }
+        leaf age {
+            type int8;
+        }
+        leaf-list certifications {
+            type string;
+        }
+    }
+}
