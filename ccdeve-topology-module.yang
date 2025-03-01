@@ -1,0 +1,60 @@
+module ccdeve-topology-module {
+    namespace "https://devnetexperttraining.com/topology";
+    prefix "ccd";
+
+    container topology {
+        list device {
+            key name;
+            leaf name {
+                type string;
+                mandatory true;
+            }
+            leaf sku {
+                type string;
+            }
+        }
+        list link {
+            key name;
+
+            leaf name {
+                type string;
+                mandatory true;
+            }
+            container a {
+                leaf device {
+                    mandatory true;
+                    type leafref {
+                        path "../../../device/name";  
+                    }
+                }
+                leaf ip_address {
+                    type string;
+                }
+                leaf interface {
+                    type string;
+                    mandatory true;
+                }
+            }
+            container b {
+                leaf device {
+                    mandatory true;
+                    type leafref {
+                        path "../../../device/name";
+                    }
+                }
+                leaf ip_address {
+                    type string;
+                }
+                leaf interface {
+                    type string;
+                    mandatory true;
+                }
+            }
+            leaf cable_length {
+                type decimal64 {
+                    fraction-digits 2;
+                }
+            }
+        }
+    }
+}
