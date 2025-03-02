@@ -1,0 +1,46 @@
+module ccdeve-score-report {
+    namespace "https://devnetexperttraining.com/scorereport";
+    prefix "scorereport";
+
+    typedef domainperformance {
+        type string {
+            pattern "([0-9]{1,2}(\.[0-9]{1,2})?|100(\.00)?)%";
+        }
+    }
+    container score-report {
+        leaf candidate-name {
+            type string;
+        }
+        leaf status {
+            type enumeration {
+                enum PASS;
+                enum FAIL;
+            }
+        }
+        choice report-or-cert {
+            case cert {
+                leaf devnet-number {
+                    config false;
+                    type int32;
+                }
+            }
+            case report {
+                leaf software-design {
+                    type domainperformance;
+                }
+                leaf infrastructure-as-code {
+                    type domainperformance;
+                }
+                leaf automation {
+                    type domainperformance;
+                }
+                leaf containers {
+                    type domainperformance;
+                }
+                leaf security {
+                    type domainperformance;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+    <score-report xmlns="https://devnetexperttraining.com/scorereport">
+        <candidate-name>Andreas Stenderup Baekdahl</candidate-name>
+        <status>FAIL</status>
+        <software-design>57%</software-design>
+        <infrastructure-as-code>72%</infrastructure-as-code>
+        <automation>68%</automation>
+        <containers>70%</containers>
+        <security>88%</security>
+    </score-report>
+</data>
