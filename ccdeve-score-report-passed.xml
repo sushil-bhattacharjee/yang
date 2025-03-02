@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <data xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
     <score-report xmlns="https://devnetexperttraining.com/scorereport">
-        <candidate-name>Andreas Stenderup Baekdahl</candidate-name>
+        <candidate-name>Sushil Bhattacharjee</candidate-name>
         <status>PASS</status>
-        <devnet-number>20220006</devnet-number>
+        <devnet-number>CISCO145637</devnet-number>
     </score-report>
 </data>
