@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+    <device xmlns="https://devnetexperttraining.com/devicemodule">
+        <hostname>RouterA</hostname>
+        <vrfs>CustomerA</vrfs>
+        <vrfs>CustomerB</vrfs>
+        <vrfs>CustomerC</vrfs>
+        <vrfs>CustomerD</vrfs>
+        <primary-loopback>
+            <number>10</number>
+            <ip-address>10.10.10.10</ip-address>
+            <prefix-length>24</prefix-length>
+        </primary-loopback>
+        <vlans>
+            <id>1010</id>
+            <name>CustomerA</name>
+        </vlans>
+        <vlans>
+            <id>1020</id>
+            <name>CustomerB</name>
+        </vlans>
+    </device>
+</data>

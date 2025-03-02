@@ -1,0 +1,43 @@
+module ccdeve-device-module {
+    namespace "https://devnetexperttraining.com/devicemodule";
+    prefix "cddm";
+    import ietf-inet-types {
+        prefix inet;
+    }
+    container device {
+        leaf hostname {
+            type string {
+                length "1..20";
+            }
+        }
+        leaf-list vrfs {
+            type string;
+        }
+        container primary-loopback {
+            leaf number {
+                type uint32 {
+                    range "0..2147483647";
+                }
+            }
+            leaf ip-address {
+                type inet:ipv4-address;
+            }
+            leaf prefix-length {
+                type uint8;
+            }
+        }
+        list vlans {
+            key id;
+            leaf id {
+                type uint16 {
+                    range "2..1001 | 1006..4094";
+                }
+            }
+            leaf name {
+                type string {
+                    length "1..32";
+                }
+            }
+        }
+    }
+}

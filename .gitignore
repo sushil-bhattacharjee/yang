@@ -4,4 +4,10 @@
 v/
 .github/
 .trunk/
+.vYANG/ccdeve-device-module-data.dsrl
+ccdeve-device-module-data.dsrl
+ccdeve-device-module-data.rng
+ccdeve-device-module-data.sch
+ ccdeve-device-module-gdefs.rng
+ccdeve-device-module-gdefs.rng
 .vYANG/
